@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Aposta</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <input type="checkbox" id="menu" class="cabecalho__botao">
+        <label for="menu">
+            <span class="cabecalho__menu__hamburguer cabecalho__imagem"></span>
+        </label>
+        <ul class="cabecalho__menu">
+            <li class="cabecalho__dialogo">Conheça o Canal Facíl Né:</li>
+            <li class="cabecalho__dialogo">Nome:
+                <input type="text" id="login123" class="cabecalho__entrada">
+            </li>
+            <li class="cabecalho__dialogo"><button id="btnNome">Enviar</button></li>
+        </ul>
+        <p class="ver_credito">Você tem <span id="valorAtual">0</span> Dolígoros</p>
+        <input class="cabecalho__entrada" id="input__valor" for="btnCredito">
+        <button class="cabecalho__valor" id="btnCredito"> Adicionar</button>
+    </header>
+    <main>
+        <p class="espacinho1"></p>
+        <section class="creditos">
+            <h1 class="nome" id="nome"></h1>
+            <h2 id="credito_jogar"></h2>
+        </section>
+
+        <section class="container__jogatina">
+            <h2 class="titulo__jogatina"> Acerte o Número</h2>
+            <div class="corpo">
+                <div class="imagem-e-resultado">
+                    <img src="/img/Sem título.png" class="imagem__acerte__numero" alt="números de 1 a 10">
+                    <h2 id="resultadoAcerte"></h2>
+                </div>
+                <div class="texto__container">
+                    <p> O jogo consiste em tentar acertar o número sorteado pelo computador entre 1 e 10. caso acerte, seus dolígoros almentam muito. Caso erre, seus dolígoros somem. Vamos nos divertir!!! Quanto deseja apostar?</p>
+                    <p> Qual o valor da Aposta (ganhe 9 vezes o valor da aposta)</p>
+                    <input class="cabecalho__entrada" id="valorAcerte" type="number" placeholder="Digite o valor da aposta">
+                    <p> Qual o seu palpite? Atenção, só valem numeros de 1 a 10</p>
+                    <input class="cabecalho__entrada" id="PalpiteAcerte" type="number" placeholder="Digite seu palpite de 1 a 10">
+                    <button class="btn_acerta" id="btnAcerte"> Apostar</button>
+                </div>
+            </div>
+        </section>
+        <section class="facilne">
+            <h2 class="titulo__jogatina"> Você já conhece o canal Fácil Né</h2>
+            <img src="/img/Abertura.png" class="facilne__imagem">
+            <p class="facilne__texto">O canal Fácil Né no YouTube é o seu guia definitivo para aulas de cálculo do ensino superior. Descomplicamos equações complexas e tornamos a matemática mais acessível. Com explicações claras e exemplos práticos, dominar o cálculo nunca foi tão fácil. Inscreva-se agora e eleve suas habilidades matemáticas a um novo patamar. Aprender nunca foi tão Fácil Né!</p>
+            <a class="btn__facilne" href="https://www.youtube.com/channel/UC7hxhxqTUXkzcm5fTXK3R0g">Inscreva-se</a>
+        </section>
+        <section class="container__jogatina">
+            <h2 class="titulo__jogatina"> Regra de Três</h2>
+            <div class="corpo">
+                <div class="imagem-e-resultado">
+                    <img src="/img/Sem título2.png" class="imagem__acerte__numero" alt="imagem de um pensador com o número 3">
+                    <h2 id="resultadoRegra3"></h2>
+                </div>
+                <div class="texto__container">
+                    <p> O jogo consiste em palpitar 1 numero de 0 a 5. O computador escolhe 2 valores de 1 a 5. Se você acertar, você ganha muito, mas se você errar, você perde tudo. Divirta-se nesse jogo maravilhoso.</p>
+                    <p> Qual o valor da Aposta (ganhe 1.9 vezes o valor da aposta)</p>
+                    <input class="cabecalho__entrada" id="valorRegra3" type="number" placeholder="Digite o valor da aposta">
+                    <p> Qual o seu palpite? Atenção, só valem numeros de 1 a 5</p>
+                    <input class="cabecalho__entrada" id="PalpiteRegra3__1" type="number" placeholder="Digite seu palpite de 1 a 5">
+                    <button class="btn_acerta" id="btnRegra3"> Apostar</button>
+                </div>
+            </div>
+        </section>
+        <section class="container__jogatina">
+            <h2 class="titulo__jogatina"> Multiplicador</h2>
+            <div class="corpo">
+                <div class="imagem-e-resultado">
+                    <img src="/img/images3.jpg" class="imagemMultiplicador" alt="imagem de um pensador com o número 3">
+                    <h2 id="resultadoMultiplicador"></h2>
+                </div>
+                <div class="texto__container">
+                    <p> O jogo consiste em palpitar 1 numero de 1 a 3, onde o seu palpite vai ser o multiplicador da sua aposta. O computador sorteia um numero de 0 a 3, e se seu multiplicador for menor que o sorteado, você ganha. Mas se o seu multiplicador for maior que o sorteado pelo computador, você perde tudo. Divirta-se!</p>
+                    <p> Qual o valor da Aposta (ganhe o multiplicador de vezes o valor da aposta)</p>
+                    <input class="cabecalho__entrada" id="valorMultiplicador" type="number" placeholder="Digite o valor da aposta">
+                    <p> Qual o seu palpite? Atenção, só valem numeros de 1 a 3, mas tambem valem números decimais.</p>
+                    <input class="cabecalho__entrada" id="PalpiteMultiplicador" type="number" placeholder="Digite seu palpite de 1 a 5">
+                    <button class="btn_acerta" id="btnMultiplicador"> Apostar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </br>
+    <footer class="rodape"> Site e Algorítmo produzido por Igor F Junqueira Portugal</footer>
+    <script src="main.js"></script>
+</body>
+</html>
